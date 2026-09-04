@@ -7,14 +7,201 @@
   <meta name="description" content="Five travel-size skincare essentials for men over 30, picked by someone who already did the research. Layover Luxe reminds you before you run out, and packs before you do.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,450;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+  <!-- ============ engraved sprite ============ -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#C9974C" stop-opacity="0.16"/>
+        <stop offset="52%" stop-color="#7A2E0B" stop-opacity="0.10"/>
+        <stop offset="100%" stop-color="#0B0705" stop-opacity="0.30"/>
+      </linearGradient>
+      <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#C9974C" stop-opacity="0"/>
+        <stop offset="50%" stop-color="#C9974C" stop-opacity="0.85"/>
+        <stop offset="100%" stop-color="#C9974C" stop-opacity="0"/>
+      </linearGradient>
+      <radialGradient id="ember" cx="50%" cy="50%">
+        <stop offset="0%" stop-color="#F28B2C" stop-opacity="0.30"/>
+        <stop offset="45%" stop-color="#7A2E0B" stop-opacity="0.16"/>
+        <stop offset="100%" stop-color="#7A2E0B" stop-opacity="0"/>
+      </radialGradient>
+      <filter id="grainFilter">
+        <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="4" stitchTiles="stitch"/>
+        <feColorMatrix type="saturate" values="0"/>
+      </filter>
+    </defs>
+
+    <!-- Cleanser — tall pump -->
+    <symbol id="v-cleanser" viewBox="0 0 120 210">
+      <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round">
+        <path d="M40 22 h-9 a3 3 0 0 0 -3 3 v5"/>
+        <rect x="40" y="13" width="22" height="13" rx="2"/>
+        <path d="M51 26 v10"/>
+        <rect x="41" y="36" width="38" height="11" rx="2"/>
+        <rect x="48" y="47" width="24" height="7"/>
+        <rect x="30" y="54" width="60" height="148" rx="6" fill="url(#glass)"/>
+        <path d="M30 104 h60 M30 154 h60"/>
+        <g stroke-width="0.6" opacity="0.42">
+          <path d="M37 64 v34 M42 66 v30 M47 70 v24"/>
+          <path d="M44 47 v7 M56 47 v7 M64 47 v7"/>
+          <path d="M46 36 v11 M53 36 v11 M60 36 v11 M67 36 v11"/>
+        </g>
+        <path d="M38 114 h44 M38 122 h34 M38 130 h40" stroke-width="0.7" opacity="0.5"/>
+        <path d="M30 190 h60" stroke-width="0.6" opacity="0.4"/>
+      </g>
+    </symbol>
+
+    <!-- Vitamin C — dropper serum -->
+    <symbol id="v-vitc" viewBox="0 0 120 210">
+      <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round">
+        <rect x="48" y="8" width="24" height="24" rx="11"/>
+        <path d="M48 26 h24"/>
+        <rect x="42" y="32" width="36" height="20" rx="2"/>
+        <rect x="50" y="52" width="20" height="7"/>
+        <path d="M34 59 h52 v128 a7 7 0 0 1 -7 7 h-38 a7 7 0 0 1 -7 -7 z" fill="url(#glass)"/>
+        <path d="M34 110 h52 M34 156 h52"/>
+        <path d="M60 66 v98" stroke-width="0.8" opacity="0.55"/>
+        <path d="M56 164 l4 8 l4 -8 z" stroke-width="0.8" opacity="0.55"/>
+        <g stroke-width="0.6" opacity="0.42">
+          <path d="M40 68 v34 M45 70 v30"/>
+          <path d="M46 32 v20 M53 32 v20 M60 32 v20 M67 32 v20 M74 32 v20"/>
+        </g>
+        <path d="M41 120 h38 M41 128 h28 M41 136 h34" stroke-width="0.7" opacity="0.5"/>
+      </g>
+    </symbol>
+
+    <!-- SPF 50 — squeeze tube -->
+    <symbol id="v-spf" viewBox="0 0 120 210">
+      <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round">
+        <rect x="44" y="10" width="32" height="22" rx="3"/>
+        <path d="M44 26 h32"/>
+        <path d="M41 32 h38 l8 16 h-54 z"/>
+        <path d="M33 48 h54 v134 h-54 z" fill="url(#glass)"/>
+        <path d="M33 96 h54 M33 148 h54"/>
+        <path d="M33 182 h54 M33 188 h54"/>
+        <g stroke-width="0.6" opacity="0.42">
+          <path d="M39 182 v6 M45 182 v6 M51 182 v6 M57 182 v6 M63 182 v6 M69 182 v6 M75 182 v6 M81 182 v6"/>
+          <path d="M39 56 v32 M44 58 v28"/>
+          <path d="M48 10 v22 M56 10 v22 M64 10 v22 M72 10 v22"/>
+        </g>
+        <path d="M40 108 h40 M40 116 h30 M40 124 h36" stroke-width="0.7" opacity="0.5"/>
+        <circle cx="60" cy="136" r="6" stroke-width="0.8" opacity="0.6"/>
+        <g stroke-width="0.6" opacity="0.5">
+          <path d="M60 126 v-4 M60 146 v4 M50 136 h-4 M70 136 h4 M53 129 l-3 -3 M67 143 l3 3 M67 129 l3 -3 M53 143 l-3 3"/>
+        </g>
+      </g>
+    </symbol>
+
+    <!-- Retinol — small stout dropper -->
+    <symbol id="v-retinol" viewBox="0 0 120 210">
+      <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round">
+        <rect x="50" y="34" width="20" height="20" rx="9"/>
+        <path d="M50 48 h20"/>
+        <rect x="44" y="54" width="32" height="18" rx="2"/>
+        <rect x="52" y="72" width="16" height="6"/>
+        <rect x="34" y="78" width="52" height="112" rx="10" fill="url(#glass)"/>
+        <path d="M34 118 h52 M34 162 h52"/>
+        <path d="M60 84 v76" stroke-width="0.8" opacity="0.55"/>
+        <g stroke-width="0.6" opacity="0.42">
+          <path d="M40 88 v24 M45 90 v20"/>
+          <path d="M48 54 v18 M55 54 v18 M62 54 v18 M69 54 v18"/>
+        </g>
+        <path d="M41 128 h38 M41 136 h26 M41 144 h32" stroke-width="0.7" opacity="0.5"/>
+      </g>
+    </symbol>
+
+    <!-- Moisturizer — squat jar -->
+    <symbol id="v-moisturizer" viewBox="0 0 120 210">
+      <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round">
+        <rect x="28" y="46" width="64" height="26" rx="4"/>
+        <path d="M28 58 h64"/>
+        <rect x="32" y="72" width="56" height="6"/>
+        <rect x="30" y="78" width="60" height="104" rx="10" fill="url(#glass)"/>
+        <path d="M30 112 h60 M30 156 h60"/>
+        <g stroke-width="0.6" opacity="0.42">
+          <path d="M36 88 v18 M41 90 v14"/>
+          <path d="M34 46 v12 M42 46 v12 M50 46 v12 M58 46 v12 M66 46 v12 M74 46 v12 M82 46 v12"/>
+        </g>
+        <path d="M38 122 h44 M38 130 h32 M38 138 h38" stroke-width="0.7" opacity="0.5"/>
+      </g>
+    </symbol>
+
+    <!-- Filigree rule -->
+    <symbol id="filigree" viewBox="0 0 400 26">
+      <g fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+        <path d="M8 13 H142" stroke="url(#rule)"/>
+        <path d="M142 13 c16 0 11 -8 20 -8 s8 9 -3 9 c-7 0 -11 -1 -17 -1"/>
+        <path d="M186 13 l14 -9 l14 9 l-14 9 z"/>
+        <circle cx="200" cy="13" r="2.4"/>
+        <path d="M258 13 c-16 0 -11 -8 -20 -8 s-8 9 3 9 c7 0 11 -1 17 -1"/>
+        <path d="M258 13 H392" stroke="url(#rule)"/>
+      </g>
+    </symbol>
+
+    <!-- Monogram crest -->
+    <symbol id="crest" viewBox="0 0 120 120">
+      <g fill="none" stroke="currentColor" stroke-linecap="round">
+        <circle cx="60" cy="60" r="54" stroke-width="1"/>
+        <circle cx="60" cy="60" r="48" stroke-width="0.6" opacity="0.55"/>
+        <path d="M60 6 l4 5 l-4 5 l-4 -5 z" stroke-width="0.9"/>
+        <path d="M46 42 v30 h16" stroke-width="2.2"/>
+        <path d="M60 42 v30 h16" stroke-width="2.2"/>
+        <path d="M44 88 c6 -2 10 -6 12 -11 M76 88 c-6 -2 -10 -6 -12 -11" stroke-width="0.9"/>
+        <path d="M47 84 c-3 -3 -4 -6 -4 -9 M53 87 c-3 -3 -5 -7 -5 -10 M73 84 c3 -3 4 -6 4 -9 M67 87 c3 -3 5 -7 5 -10" stroke-width="0.7" opacity="0.7"/>
+      </g>
+    </symbol>
+
+    <!-- Carry-on seal -->
+    <symbol id="seal" viewBox="0 0 200 200">
+      <g fill="none" stroke="currentColor" stroke-linecap="round">
+        <circle cx="100" cy="100" r="95" stroke-width="1"/>
+        <circle cx="100" cy="100" r="88" stroke-width="0.6" opacity="0.6"/>
+        <circle cx="100" cy="100" r="58" stroke-width="0.6" opacity="0.6"/>
+        <g stroke-width="0.8" opacity="0.7">
+          <path d="M100 5 v7 M100 188 v7 M5 100 h7 M188 100 h7"/>
+          <path d="M167 33 l-5 5 M33 167 l5 -5 M167 167 l-5 -5 M33 33 l5 5"/>
+        </g>
+        <path id="sealArc" d="M100,100 m-73,0 a73,73 0 1,1 146,0 a73,73 0 1,1 -146,0" stroke="none"/>
+        <g stroke-width="1.1">
+          <path d="M100 76 l3 26 l24 12 v5 l-27 -6 l-1 15 l9 7 v4 l-14 -4 l-14 4 v-4 l9 -7 l-1 -15 l-27 6 v-5 l24 -12 z"/>
+        </g>
+      </g>
+      <text class="seal-text" fill="currentColor" stroke="none">
+        <textPath href="#sealArc" startOffset="50%" text-anchor="middle">TSA APPROVED · CARRY-ON READY · NOTHING TO DECLARE</textPath>
+      </text>
+    </symbol>
+
+    <!-- Laurel sprig -->
+    <symbol id="sprig" viewBox="0 0 60 120">
+      <g fill="none" stroke="currentColor" stroke-width="0.9" stroke-linecap="round">
+        <path d="M30 4 C30 40 30 80 30 116"/>
+        <path d="M30 20 c-14 -2 -20 -10 -21 -18 c10 -1 18 6 21 18 z"/>
+        <path d="M30 20 c14 -2 20 -10 21 -18 c-10 -1 -18 6 -21 18 z"/>
+        <path d="M30 46 c-14 -2 -20 -10 -21 -18 c10 -1 18 6 21 18 z"/>
+        <path d="M30 46 c14 -2 20 -10 21 -18 c-10 -1 -18 6 -21 18 z"/>
+        <path d="M30 72 c-14 -2 -20 -10 -21 -18 c10 -1 18 6 21 18 z"/>
+        <path d="M30 72 c14 -2 20 -10 21 -18 c-10 -1 -18 6 -21 18 z"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <!-- film grain + candlelight -->
+  <svg class="grain" aria-hidden="true" focusable="false">
+    <rect width="100%" height="100%" filter="url(#grainFilter)"/>
+  </svg>
+  <div class="vignette" aria-hidden="true"></div>
+
   <nav class="nav">
     <div class="wrap">
-      <a href="#" class="logo">Layover Luxe</a>
+      <a href="#" class="logo">
+        <svg class="logo-crest" viewBox="0 0 120 120" aria-hidden="true"><use href="#crest"/></svg>
+        <span>Layover Luxe</span>
+      </a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -29,118 +216,136 @@
 
   <header class="hero">
     <div class="wrap">
-      <div class="hero-copy">
+      <div class="hero-copy reveal">
         <span class="eyebrow">The kit that goes where you do</span>
-        <h1>Everything you need<br>and nothing you don't.</h1>
+        <h1>Everything you need<br><em>and nothing</em> you don't.</h1>
         <p class="hero-sub">We did the research so you don't have to. You just have to use it.</p>
         <div class="hero-ctas">
           <a href="#join" class="btn btn-primary">Start Your Kit</a>
-          <a href="#kit" class="hero-scroll-link">See what's inside ↓</a>
+          <a href="#kit" class="hero-scroll-link">See what's inside</a>
         </div>
       </div>
-      <div class="hero-art">
-        <div class="citrus c1"></div>
-        <div class="citrus c2"></div>
-        <div class="pouch-mock">
-          <div class="zip"></div>
-          <div class="word">Layover Luxe</div>
-          <div class="sub">five essentials for men over 30, perfectly zipped up.</div>
-          <div class="dots">
-            <span></span><span></span><span></span><span></span><span></span>
-          </div>
-        </div>
-      </div>
+
+      <figure class="still-life reveal">
+        <svg viewBox="0 0 560 430" role="img" aria-label="The five Layover Luxe vessels arranged on a shelf">
+          <ellipse cx="280" cy="330" rx="270" ry="118" fill="url(#ember)" class="ember"/>
+          <g class="vessels">
+            <g transform="translate(6,203) scale(0.95)"><use href="#v-moisturizer" width="120" height="210"/></g>
+            <g transform="translate(112,174)"><use href="#v-cleanser" width="120" height="210"/></g>
+            <g transform="translate(242,197) scale(0.92)"><use href="#v-vitc" width="120" height="210"/></g>
+            <g transform="translate(356,213) scale(0.86)"><use href="#v-spf" width="120" height="210"/></g>
+            <g transform="translate(460,224) scale(0.80)"><use href="#v-retinol" width="120" height="210"/></g>
+          </g>
+          <path d="M10 379 H550" stroke="url(#rule)" stroke-width="1.2" fill="none"/>
+          <path d="M40 385 H520" stroke="url(#rule)" stroke-width="0.6" fill="none" opacity="0.5"/>
+        </svg>
+        <figcaption>
+          <span class="cap-rule"></span>
+          Five essentials for men over 30, perfectly zipped up.
+        </figcaption>
+      </figure>
     </div>
   </header>
 
+  <div class="rule"><svg viewBox="0 0 400 26" aria-hidden="true"><use href="#filigree"/></svg></div>
+
   <section class="section">
     <div class="wrap">
-      <div class="section-head center">
+      <div class="section-head center reveal">
         <span class="eyebrow">Why Layover Luxe</span>
-        <h2>You don't need to become a skincare enthusiast.<br>You just need to know one.</h2>
+        <h2>You don't need to become a skincare&nbsp;enthusiast.<br>You just need to <em>know one.</em></h2>
         <p class="founder-bio">Kenzie is a wellness coach, retired professional cheerleader, and full-time traveler with strong opinions about what goes on your face. She's spent years researching which products actually work — and what's just pretty packaging. If the goal is to look hot in 10 years, this is the kit she'd hand you.</p>
       </div>
-      <div class="value-list">
-        <div class="value-item">
-          <div class="num">01</div>
+
+      <ol class="tenets">
+        <li class="reveal">
+          <span class="numeral">I</span>
           <div>
             <h3>The products are picked.</h3>
             <p>Cleanser, Vitamin C, SPF, retinol, moisturizer. We pick the best stuff. You just need to put it on.</p>
           </div>
-        </div>
-        <div class="value-item">
-          <div class="num">02</div>
+        </li>
+        <li class="reveal">
+          <span class="numeral">II</span>
           <div>
             <h3>We reach out before you run out.</h3>
             <p>We know when you're getting low, and you'll hear from us. Refills ship before you notice it's gone.</p>
           </div>
-        </div>
-        <div class="value-item">
-          <div class="num">03</div>
+        </li>
+        <li class="reveal">
+          <span class="numeral">III</span>
           <div>
             <h3>It goes where you go.</h3>
             <p>We're not messing with cheap travel bottles anymore. The pouch is packed, TSA approved, and ready to be thrown in your bag.</p>
           </div>
-        </div>
-      </div>
+        </li>
+      </ol>
     </div>
   </section>
+
+  <div class="rule"><svg viewBox="0 0 400 26" aria-hidden="true"><use href="#filigree"/></svg></div>
 
   <section class="section" id="kit">
     <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">What's in the pouch</span>
-        <h2>Everything you need, nothing you don't.</h2>
-        <p class="goal-line">Goal: &ldquo;Wait, you're how old?&rdquo;</p>
-        <div class="tsa-seal">
-          <span class="tsa-seal-icon-wrap">
-            <svg class="tsa-seal-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M2 21l21-9L2 3v7l15 2-15 2z"/>
-            </svg>
-          </span>
-          <span>TSA&#8209;Approved Sizes</span>
+      <div class="kit-head reveal">
+        <div>
+          <span class="eyebrow">What's in the pouch</span>
+          <h2>Everything you need,<br>nothing you <em>don't.</em></h2>
+          <p class="goal-line">Goal: &ldquo;Wait, you're how old?&rdquo;</p>
         </div>
+        <svg class="seal-mark" viewBox="0 0 200 200" role="img" aria-label="TSA approved, carry-on ready"><use href="#seal"/></svg>
       </div>
-      <div class="product-grid">
-        <div class="product-card">
-          <div class="swatch sw-cleanser"><div class="cap"></div></div>
-          <h3>Morning/Evening · Cleanser</h3>
+
+      <div class="plates">
+        <article class="plate reveal">
+          <div class="plate-art"><svg viewBox="0 0 120 210" aria-hidden="true"><use href="#v-cleanser"/></svg></div>
+          <span class="plate-when">Morning / Evening</span>
+          <h3>Cleanser</h3>
           <p>Washes off the day without turning your face into a raisin.</p>
-        </div>
-        <div class="product-card">
-          <div class="swatch sw-vitc"><div class="cap"></div></div>
-          <h3>Morning · Vitamin C</h3>
+        </article>
+        <article class="plate reveal">
+          <div class="plate-art"><svg viewBox="0 0 120 210" aria-hidden="true"><use href="#v-vitc"/></svg></div>
+          <span class="plate-when">Morning</span>
+          <h3>Vitamin C</h3>
           <p>Brightens. Protects. Makes you look less like you've been grinding for 11 hours even when you have.</p>
-        </div>
-        <div class="product-card">
-          <div class="swatch sw-spf"><div class="cap"></div></div>
-          <h3>Morning · SPF 50</h3>
+        </article>
+        <article class="plate reveal">
+          <div class="plate-art"><svg viewBox="0 0 120 210" aria-hidden="true"><use href="#v-spf"/></svg></div>
+          <span class="plate-when">Morning</span>
+          <h3>SPF 50</h3>
           <p>Every dermatologist in the world agrees on this one. Just wear it.</p>
-        </div>
-        <div class="product-card">
-          <div class="swatch sw-retinol"><div class="cap"></div></div>
-          <h3>Night · Retinol</h3>
+        </article>
+        <article class="plate reveal">
+          <div class="plate-art"><svg viewBox="0 0 120 210" aria-hidden="true"><use href="#v-retinol"/></svg></div>
+          <span class="plate-when">Night</span>
+          <h3>Retinol</h3>
           <p>The step that turns back the dial on the last decade.</p>
-        </div>
-        <div class="product-card">
-          <div class="swatch sw-moisturizer"><div class="cap"></div></div>
-          <h3>Night · Moisturizer</h3>
+        </article>
+        <article class="plate reveal">
+          <div class="plate-art"><svg viewBox="0 0 120 210" aria-hidden="true"><use href="#v-moisturizer"/></svg></div>
+          <span class="plate-when">Night</span>
+          <h3>Moisturizer</h3>
           <p>Barrier repair while you sleep. You'll notice in about three weeks.</p>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
+  <div class="rule"><svg viewBox="0 0 400 26" aria-hidden="true"><use href="#filigree"/></svg></div>
+
   <section class="section" id="refill">
     <div class="wrap refill">
-      <div>
+      <div class="reveal">
         <span class="eyebrow">Refills</span>
-        <h2>We know before you do.</h2>
+        <h2>We know<br><em>before you do.</em></h2>
         <p>Your sunscreen runs out in six weeks if you're applying it right. Your cleanser shortly after. We track it and reach out before you're standing in your bathroom with an empty tube thinking "well, that was a good run."</p>
         <p class="refill-emphasis">One text. What do you need? It ships Thursday.</p>
       </div>
-      <div class="text-mock">
-        <div class="from">Layover Luxe</div>
+      <div class="text-mock reveal">
+        <div class="mock-head">
+          <svg class="mock-crest" viewBox="0 0 120 120" aria-hidden="true"><use href="#crest"/></svg>
+          <span>Layover Luxe</span>
+        </div>
         <div class="bubble">hey — you're about six weeks into that SPF</div>
         <div class="bubble alt">want the refill?</div>
         <div class="bubble">already sent it. ships thursday.</div>
@@ -150,38 +355,45 @@
 
   <section class="section" id="cheeky">
     <div class="wrap cheeky">
-      <div class="mirror-card">
-        <div class="seal"></div>
-        <h3>USE YOUR FUCKING RETINOL</h3>
+      <div class="mirror-card reveal">
+        <span class="wax"></span>
+        <span class="card-rule"></span>
+        <h3>Use your fucking retinol</h3>
         <span class="kiss">💋</span>
+        <span class="card-rule"></span>
       </div>
-      <div class="cheeky-copy">
+      <div class="cheeky-copy reveal">
         <span class="eyebrow">The Retinol Card</span>
-        <h2>If your retinol hasn't moved in three months, we notice.</h2>
+        <h2>If your retinol hasn't moved in three months, <em>we notice.</em></h2>
         <p>And you'll be hearing from us.</p>
       </div>
     </div>
   </section>
 
+  <div class="rule"><svg viewBox="0 0 400 26" aria-hidden="true"><use href="#filigree"/></svg></div>
+
   <section class="section">
     <div class="wrap">
-      <div class="section-head center">
+      <div class="section-head center reveal">
         <span class="eyebrow">The SPF Audit</span>
-        <h2>People we think wear SPF every day.<br>And people we don't.</h2>
+        <h2>People we think wear SPF every day.<br><em>And people we don't.</em></h2>
       </div>
-      <div class="audit-grid">
-        <div class="audit-col yes">
-          <h3>Definitely Wears SPF</h3>
-          <ul class="audit-list">
+      <div class="ledger reveal">
+        <div class="ledger-col">
+          <h3>Definitely wears SPF</h3>
+          <ul>
             <li>The guy with a linen shirt for every occasion</li>
             <li>Every heartthrob in the romcom your girlfriend wants to watch</li>
             <li>Every man your mom has ever called "distinguished"</li>
             <li>The guy aging so well it's actually annoying</li>
           </ul>
         </div>
-        <div class="audit-col no">
-          <h3>Definitely Does Not</h3>
-          <ul class="audit-list">
+        <div class="ledger-spine" aria-hidden="true">
+          <svg viewBox="0 0 60 120"><use href="#sprig"/></svg>
+        </div>
+        <div class="ledger-col">
+          <h3>Definitely does not</h3>
+          <ul>
             <li>Your old history teacher</li>
             <li>The guy who peaked in high school and everyone can tell</li>
             <li>The guy with a single bar of soap in his shower</li>
@@ -192,31 +404,45 @@
     </div>
   </section>
 
+  <div class="rule"><svg viewBox="0 0 400 26" aria-hidden="true"><use href="#filigree"/></svg></div>
+
   <section class="section" id="travel">
-    <div class="wrap travel">
-      <div>
+    <div class="wrap">
+      <div class="why reveal">
         <span class="eyebrow">Why Layover</span>
-        <h2 class="why-quote">There comes an important moment in every guy's life where the holy grail opens and they finally ask the golden question: &ldquo;So what are all the girls doing out here to stay looking young?&rdquo;</h2>
-        <p>Oh honey. Let us save you the trouble. We made your skincare routine as simple as possible without cutting any corners. We know five steps seems like a lot right now — but we'll just be over here laughing when you tell us you can't leave the house without your SPF in a few weeks.</p>
-        <p>Layover Luxe is the answer — five products, carefully chosen, packed, and (briefly) explained.</p>
-      </div>
-      <div class="route-mock">
-        <div class="route-line">
-          <div class="route-dot"></div>
-          <div class="route-track"></div>
-          <div class="route-dot"></div>
+        <blockquote>
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+          There comes an important moment in every guy's life where the holy grail opens and they finally ask the golden question: &ldquo;So what are all the girls doing out here to stay looking young?&rdquo;
+        </blockquote>
+        <div class="why-body">
+          <p>Oh honey. Let us save you the trouble. We made your skincare routine as simple as possible without cutting any corners. We know five steps seems like a lot right now — but we'll just be over here laughing when you tell us you can't leave the house without your SPF in a few weeks.</p>
+          <p>Layover Luxe is the answer — five products, carefully chosen, packed, and (briefly) explained.</p>
         </div>
-        <div class="code">HOME &rarr; ANYWHERE</div>
-        <div class="label">skincare status: already packed</div>
+      </div>
+
+      <div class="tag reveal">
+        <div class="tag-inner">
+          <span class="tag-eye">Layover Luxe</span>
+          <div class="tag-route">
+            <span>HOME</span>
+            <svg class="tag-plane" viewBox="0 0 120 24" aria-hidden="true">
+              <path d="M2 12 H86" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 4" fill="none"/>
+              <path d="M118 12 l-26 -9 l6 9 l-6 9 z" fill="currentColor"/>
+            </svg>
+            <span>ANYWHERE</span>
+          </div>
+          <span class="tag-status">Skincare status: already packed</span>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="section" id="join">
     <div class="wrap">
-      <div class="cta">
+      <div class="cta reveal">
+        <svg class="cta-crest" viewBox="0 0 120 120" aria-hidden="true"><use href="#crest"/></svg>
         <span class="eyebrow">Ready when you are</span>
-        <h2>You've thought about this long enough.</h2>
+        <h2>You've thought about this<br><em>long enough.</em></h2>
         <p>Drop your email. We'll handle the rest.</p>
         <form class="subscribe-form" id="subscribeForm">
           <input type="email" placeholder="you@somewhere.com" required aria-label="Email address">
@@ -235,7 +461,7 @@
         <li><a href="#refill">Refills</a></li>
         <li><a href="#travel">Why Layover</a></li>
       </ul>
-      <span class="foot-links">&copy; 2026 Layover Luxe</span>
+      <span class="foot-copy">&copy; 2026 Layover Luxe</span>
     </div>
   </footer>
 
@@ -254,9 +480,36 @@
     const note = document.getElementById('formNote');
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      note.textContent = "on it — check your inbox.";
+      note.textContent = "On it — check your inbox.";
       form.reset();
     });
+
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const targets = Array.from(document.querySelectorAll('.reveal'));
+    const show = el => el.classList.add('in');
+
+    if (reduced || !('IntersectionObserver' in window)) {
+      targets.forEach(show);
+    } else {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            show(entry.target);
+            io.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -5% 0px', threshold: 0 });
+      targets.forEach(el => io.observe(el));
+
+      // Fail-safe: never leave content stranded at opacity 0 if the
+      // observer misses an element that is already on screen.
+      const sweep = () => targets.forEach(el => {
+        const r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight && r.bottom > 0) show(el);
+      });
+      window.addEventListener('load', () => requestAnimationFrame(sweep));
+      setTimeout(sweep, 2500);
+    }
   </script>
 
 </body>
